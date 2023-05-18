@@ -55,6 +55,9 @@ TARGET_KERNEL_CONFIG := enchilada_defconfig
 TARGET_KERNEL_SOURCE := kernel/oneplus/sdm845
 TARGET_KERNEL_CLANG_COMPILE := true
 
+#disable SELinux
+BOARD_KERNEL_CMDLINE += "androidboot.selinux=permissive"
+
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 BUILD_WITHOUT_VENDOR := true
